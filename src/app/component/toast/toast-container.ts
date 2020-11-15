@@ -25,8 +25,8 @@ import { ToastService } from './toast.service';
 export class ToastsContainer {
   constructor(public toastService: ToastService) {}
 
-  isTemplate(toast:{title:string}) { 
-    debugger;
+  isTemplate(toast:{title:string}) {
+    // debugger;
     return toast.title;
    }
 }

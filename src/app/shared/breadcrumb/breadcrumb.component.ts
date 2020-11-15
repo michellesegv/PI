@@ -12,7 +12,7 @@ import { Observer } from 'rxjs';
   templateUrl: './breadcrumb.component.html'
 })
 export class BreadcrumbComponent implements OnInit {
-  pageInfo:Data=Object.create(null);
+  pageInfo: Data = Object.create(null);
   constructor(
     private router: Router,
     private activatedRoute: ActivatedRoute,
@@ -31,11 +31,11 @@ export class BreadcrumbComponent implements OnInit {
       )
       .pipe(filter(route => route.outlet === 'primary'))
       .pipe(mergeMap(route => route.data))
-      .subscribe((event:Data) => {
-        debugger;
+      .subscribe((event: Data) => {
+        // debugger;
         this.titleService.setTitle(event['title']);
         this.pageInfo = event;
       });
   }
-  ngOnInit() {}
+  ngOnInit() { }
 }

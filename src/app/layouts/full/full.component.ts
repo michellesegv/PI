@@ -11,15 +11,15 @@ import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
 })
 export class FullComponent implements OnInit {
 
-	public config: PerfectScrollbarConfigInterface = {};
+  public config: PerfectScrollbarConfigInterface = {};
 
-  	constructor(public router: Router) {}
+  constructor(public router: Router) { }
 
-	public innerWidth: number=0;
-	public defaultSidebar: string='';
-	public showMobileMenu = false;
-	public expandLogo = false;
-	public sidebartype = 'full';
+  public innerWidth: number = 0;
+  public defaultSidebar: string = '';
+  public showMobileMenu = false;
+  public expandLogo = false;
+  public sidebartype = 'full';
 
   Logo() {
     this.expandLogo = !this.expandLogo;

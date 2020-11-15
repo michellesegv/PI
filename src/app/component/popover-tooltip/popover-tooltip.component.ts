@@ -32,7 +32,7 @@ export class NgbdPopTooltipComponent {
 	@ViewChild('p', { static: true }) public popover:any;
 
 	public changeGreeting(greeting: NgbTooltip): void {
-		debugger;
+		// debugger;
 		const isOpen = this.popover.isOpen();
 		this.popover.close();
 		if (greeting !== this.greeting || !isOpen) {
