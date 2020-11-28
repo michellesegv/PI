@@ -31,6 +31,7 @@ const routes: Routes = [
   imports: [FormsModule, CommonModule, RouterModule.forChild(routes), HttpClientModule],
   declarations: [LoginComponent]
 })
+
 export class LoginModule {
 
 }
